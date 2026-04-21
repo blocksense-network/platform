@@ -1,0 +1,33 @@
+# Copyright 2025 Schelling Point Labs Inc
+# SPDX-License-Identifier: AGPL-3.0-only
+
+[package]
+name = "ah-platform-api"
+description = "Agent Harbor Platform API endpoints (commercial features)"
+version = "0.0.1"
+edition = "2021"
+license = "AGPL-3.0-only"
+authors = ["Schelling Point Labs Inc."]
+
+[dependencies]
+ah-auth = { path = "../ah-auth" }
+
+axum = { version = "0.7", features = ["macros"] }
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sqlx = { version = "0.8", default-features = false, features = [
+  "runtime-tokio",
+  "sqlite",
+  "any",
+  "migrate",
+] }
+thiserror = "1"
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+uuid = { version = "1", features = ["v4"] }
+
+[dev-dependencies]
+http-body-util = "0.1"
+tower = { version = "0.5", features = ["util"] }
+uuid = { version = "1", features = ["v4"] }

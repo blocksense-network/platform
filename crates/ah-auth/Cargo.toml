@@ -1,0 +1,20 @@
+# Copyright 2025 Schelling Point Labs Inc
+# SPDX-License-Identifier: AGPL-3.0-only
+
+[package]
+name = "ah-auth"
+description = "Agent Harbor authentication (OAuth, password, email verification)"
+version = "0.0.1"
+edition = "2021"
+license = "AGPL-3.0-only"
+authors = ["Schelling Point Labs Inc."]
+
+[dependencies]
+argon2 = { version = "0.5", features = ["std"] }
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+jsonwebtoken = "9"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"

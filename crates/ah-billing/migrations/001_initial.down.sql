@@ -1,0 +1,10 @@
+DROP INDEX IF EXISTS idx_invoices_customer;
+DROP INDEX IF EXISTS idx_usage_customer_metric;
+DROP INDEX IF EXISTS idx_dunning_customer;
+DROP INDEX IF EXISTS idx_subscriptions_customer;
+DROP TABLE IF EXISTS invoices_cache;
+DROP TABLE IF EXISTS webhook_events;
+DROP TABLE IF EXISTS usage_events;
+DROP TABLE IF EXISTS dunning_records;
+DROP TABLE IF EXISTS subscriptions;
+DROP TABLE IF EXISTS customers;
