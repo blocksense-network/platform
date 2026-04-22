@@ -1,7 +1,5 @@
 # Agent Harbor Platform
 
-[![License](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge)](https://opensource.org/license/agpl-v3)
-
 Commercial platform layer for [Agent Harbor](https://github.com/blocksense-network/agent-harbor) -- authentication, billing, team management, and the platform API.
 
 ## Structure
@@ -43,4 +41,4 @@ cargo fmt --check
 
 ## License
 
-AGPL-3.0-only -- see the parent repo for full license text.
+Proprietary -- all rights reserved by Schelling Point Labs Inc.
